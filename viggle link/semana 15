@@ -1,0 +1,8 @@
+curl --request POST \
+  --url https://apis.viggle.ai/api/characters/preprocess \
+  --header 'Authorization: Bearer <token>' \
+  --header 'Content-Type: multipart/form-data' \
+  --form 'name=My Character' \
+  --form image='@example-file' \
+  --form image_url=https://example.com/character.png \
+  --form model=V3_Preview
